@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Raleway&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat+Alternates:wght@300;400&family=Open+Sans&family=Poppins&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import "../../styles/content.scss";
+
+.wrapper {
+  position: relative;
+  z-index: 99;
+  opacity: 1;
+  transform: none;
+  position: sticky;
+  background-color: #f8f7f1;
+  top: 0px;
+  transition: all 300ms ease;
+  .boxShadow {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  }
+  .container {
+    position: relative;
+    font-weight: 500;
+
+    
+
+    .portfolio_name {
+      font-family: "Rubik", sans-serif;
+      font-size: 2.1rem;
+      font-weight: 600;
+      color: #0d2f3f;
+      text-decoration: none;
+      margin: 8px 50px;
+      cursor: pointer;
+    }
+
+    .collapse {
+      ul {
+        font-size: 1.2rem;
+        font-weight: 500;
+        gap: 1.5rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        font-family: "Poppins", serif;
+
+        li {
+          a {
+            color: inherit;
+            text-decoration: none;
+            color: #0d2f3f;
+
+            &:active {
+              color: rgb(255,162,0);
+            }
+
+            &:hover {
+              color: rgb(255,162,0);
+            }
+          }
+        }
+      }
+    }
+  }
+}

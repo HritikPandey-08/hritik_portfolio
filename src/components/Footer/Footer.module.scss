@@ -1,0 +1,64 @@
+@import "../../styles/content.scss";
+
+.wrapper {
+  background: white;
+  .container {
+    gap: 1.5rem;
+    @media (max-width: $sm) {
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .left {
+      flex: 3;
+      font-family: "Rubik", sans-serif;
+      > * {
+        display: block;
+      }
+      > :nth-child(2) {
+        margin-top: 2rem;
+
+        a {
+          text-decoration: underline;
+          color: rgb(255, 160, 0);
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      font-family: "Poppins", sans-serif;
+      .info {
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+        span {
+          font-weight: 600;
+        }
+        > * {
+          display: block;
+        }
+      }
+      .menu {
+        @media (max-width: $sm) {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        list-style: none;
+        li {
+          cursor: pointer;
+          font-size: 1.2rem;
+            a {
+            text-decoration: none;
+            color: #131313;
+            &:hover {
+              color: rgb(255, 160, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+}

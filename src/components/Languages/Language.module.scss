@@ -1,0 +1,24 @@
+@import "../../styles/content.scss";
+
+.wrapper {
+  overflow: hidden;
+  background-color: #fff;
+  .container {
+    .languages img{
+      @media (max-width: $sm){
+        width:5.5rem;
+        max-height: 5.5rem;
+      }
+      @media (max-width: $sm){
+        width:4.7rem;
+        max-height: 4.7rem;
+      }
+      width:8rem;
+      max-height: 8rem;
+      margin: 7px 13px;
+      object-fit: contain;
+      background-color: transparent;
+      // mix-blend-mode: color-burn;
+    }
+  }
+}

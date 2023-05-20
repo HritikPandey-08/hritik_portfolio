@@ -1,0 +1,103 @@
+@import "../../styles/content.scss";
+
+.wrapper {
+  overflow: hidden;
+
+  .container {
+    gap: 2rem;
+    .contactForm {
+      .leftText {
+        margin: 10px 5px;
+        span {
+          font-family: "Rubik", sans-serif;
+          font-size: 2rem;
+          font-weight: 600;
+          &:nth-child(2) {
+            color: rgb(255, 162, 0);
+          }
+        }
+      }
+      .contact {
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        .contact_detail {
+          img {
+            width: 3rem;
+            height: 2.5rem;
+            background-color: transparent;
+            margin: 10px 15px 10px 0px;
+            cursor: pointer;
+          }
+          span {
+            cursor: pointer;
+            a{
+              text-decoration: none;
+              color : rgb(255, 162, 0);
+            }
+          }
+        }
+      }
+      .links {
+        height: 5rem;
+        img {
+          width: 3rem;
+          margin: 10px 13px;
+          cursor: pointer;
+          transition: all 0.5s ease;
+        }
+      }
+      .rightSide {
+        margin: 18px 0px;
+        width: 23rem;
+        padding: 24px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+        label {
+          font-family: "Raleway", sans-serif;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+        .form_group input,
+        textarea {
+          font-size: 16px;
+          background: white;
+          border: 2px solid #dad9d9;
+          border-radius: 5px;
+          font-family: "Poppins", sans-serif;
+          margin-bottom: 8px;
+        }
+        .form_group h5 {
+          color: rgb(74, 74, 74);
+          font-family: "Raleway", sans-serif;
+          margin-bottom: 0;
+        }
+        button {
+          font-size: 1rem;
+          font-family: "Rubik", sans-serif;
+          background-color: rgb(255, 162, 0);
+          font-weight: 600;
+          margin: 5px 0px;
+          padding: 5px;
+          &:hover {
+            background-color: transparent;
+            border: 1px solid rgb(255, 162, 0);
+            color: rgb(33, 33, 33);
+          }
+        }
+      }
+
+      @media (max-width: $sm) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .form_group h5 {
+          text-align: start;
+        }
+      }
+    }
+  }
+}
