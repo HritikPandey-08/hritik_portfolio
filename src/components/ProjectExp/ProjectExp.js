@@ -20,7 +20,7 @@ export default function ProjectExp() {
                                 <div className={css.role}>
                                     <h2>{exp.technology}</h2>
                                     <p>{exp.shortDesc}</p>
-                                    <p><a href="github" target="_blank" rel="noreferrer">View Project <FontAwesomeIcon icon={faArrowRight} /></a></p>
+                                    <p><a href={exp.github} target="_blank" rel="noreferrer">View Project <FontAwesomeIcon icon={faArrowRight} /></a></p>
                                 </div>
                             </div>
                         );

@@ -87,7 +87,9 @@ export const projects = [
     description:
       "Sign language recognition involves recognizing actions from sign languages.The ML algorithm is trained to recognize specific signs and gestures.The algorithm captures the live video of the user, identifying the signs being made and translating them into text.significantly improve communication between sign language users and non-sign language users,providing equal access to services and information for deaf or hard-of-hearing individuals.",
       shortDesc:
-      "Developed an ML algorithm that translates sign language gestures into text, enhancing communication between sign language users and non-sign language users for equal accessibility"
+      "Developed an ML algorithm that translates sign language gestures into text, enhancing communication between sign language users and non-sign language users for equal accessibility.",
+      github:
+      ""
   },
   {
     title: "Ecommerce Website",
@@ -98,7 +100,9 @@ export const projects = [
     description:
       "This e-commerce provides a great user experience to customers. The admin has control of minute details of this e-commerce platform. The use of an instamojo API and secure payment options can potentially help small businesses and entrepreneurs expand their reach and sell their products online .The admin has control of minute details of this e-commerce platform. ",
       shortDesc:
-      "Built a fully functional ecommerce website that provides a great user experience to customers. Integrated Instamojo API for secure payment processing, allowing users to browse and purchase products with ease."
+      "Built a fully functional ecommerce website that provides a great user experience to customers. Integrated Instamojo API for secure payment processing, allowing users to browse and purchase products with ease.",
+      github:
+      ""
   },
   {
     title: "HealthCare Website",
@@ -109,6 +113,8 @@ export const projects = [
     description:
       "This Healthcare website provides online health consultation and prescription.Have a user, Doctor, and admin dashboard for their convenience.",
       shortDesc:
-      "Created a comprehensive healthcare website with online appointment and consultation functionalities. Users can schedule appointments and consult with doctors virtually."
+      "Created a comprehensive healthcare website with online appointment and consultation functionalities. Users can schedule appointments and consult with doctors virtually.",
+      github:
+      ""
   },
 ];
