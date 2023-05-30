@@ -36,7 +36,7 @@ export default function Navbar() {
             Hritik
           </Link>
           <button
-            className={`navbar-toggler`}
+            className={`navbar-toggler collapsed`}
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -47,7 +47,7 @@ export default function Navbar() {
             <span className={`navbar-toggler-icon`}></span>
           </button>
           <div
-            className={`${css.collapse} navbar-collapse text-center`}
+            className={`${css.collapse} collapse navbar-collapse text-center`}
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">

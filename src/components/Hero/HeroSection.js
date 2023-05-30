@@ -1,12 +1,12 @@
 import React from "react";
 import css from "./hero.module.scss";
-import animation from "../../utils/animation"
+
 export default function HeroSection() {
   return (
     <div id="home" className={`paddings bg_primary ${css.wrapper}`}>
       <div className={`innerWidth ${css.container}`}>
         {/* UpperSection */}
-        <div className={`${css.upperSection}`}>
+        <div className={`${css.upperSection} text-center`}>
           <span className="primaryText text-nowrap">
             Hey There,
             <br />
@@ -28,7 +28,7 @@ export default function HeroSection() {
         {/* Person image */}
 
         <div className={css.person_img}>
-          <img src="./new_avtar.png" className="img-fluid" alt="" />
+          <img src="./new_avtar.png"  alt="" />
         </div>
       </div>
     </div>
