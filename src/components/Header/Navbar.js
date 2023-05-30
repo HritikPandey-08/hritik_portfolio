@@ -36,7 +36,7 @@ export default function Navbar() {
             Hritik
           </Link>
           <button
-            className={`navbar-toggler collapsed`}
+            className={`navbar-toggler collapsed me-3`}
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
