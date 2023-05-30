@@ -1,121 +1,151 @@
 @import "../../styles/content.scss";
 
 .wrapper {
-  overflow: hidden;
   .container {
-    position: relative;
-    z-index: 1;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    @media (max-width: $sm), (max-width: $md) {
+      flex-direction: column;
+    }
     .upperSection {
       flex: 1;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
+      flex-direction: column;
       font-family: "Eudoxus Sans", sans-serif;
       @media (max-width: $sm), (max-width: $md) {
-        gap: 2rem;
+        gap: 1rem;
         justify-content: center;
         text-align: center;
       }
-    }
-    .lowerSection {
-      @media (max-width: $sm), (max-width: $md) {
-          margin-top: 5rem;
-          gap: 2rem;
-          justify-content: center;
-      }
-      margin-top: 4rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      font-family: "Rubik", sans-serif;
-      
-      .experience {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          >:nth-child(2) {
-              line-height: 25px;
-          }
-      }
-
-      .certificate {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
-          img {
-              margin-bottom: 1rem;
-              width: 3.5rem;
-          }
-      }
-  }
-
-
-    .person_img {
-      @media (max-width: $sm), (max-width:$lg) {
-        position: relative;
-        left: 0;
-        background-size: 20rem;
-        display: flex;
-        align-items: center;
+      .email {
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: rgb(255, 150, 0);
         justify-content: center;
-        background-position: bottom;
-        width: 75%;
       }
-      position: absolute;
-      bottom: -2rem;
-      margin: auto;
+    }
+    .person_img {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      max-width: 100%;
       background-image: url("../../../public/splash.png");
       background-repeat: no-repeat;
       background-size: cover;
-      left: 33%;
+      background-position: center;
       img {
-        @media (max-width: $sm) {
-          width: 100%;
+        object-fit: cover; 
+        width: 90%;
+        @media (max-width: $sm), (max-width: $md) {
+          flex-direction: column;
+          width: 65%;
         }
-        max-width: 100%;
-        height: auto;
-        margin-bottom: -5px;
       }
-    }
-
-    .email {
-      @media (max-width: $sm) {
-        position: relative;
-        display: none;
-      }
-      @media (max-width: $md){
-        top:80%;
-        right: 0;
-        left: 0;
-        text-align: center;
-        margin-bottom: 1rem;
-        // position:relative;
-      }
-      font-family: "Poppins",sans-serif;
-      text-decoration: none;
-     
-      font-size: 1.3rem;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      color: rgb(255,150,0);
-    }
-  }
-
-  .primaryText {
-    margin-right: 1rem;
-    @media (max-width: $sm) {
-      margin-right: 0;
-    }
-  }
-
-  .secondaryText {
-    margin-left: 1rem;
-    @media (max-width: $sm) {
-      margin-left: 0;
     }
   }
 }
+//   //   .lowerSection {
+//   //     @media (max-width: $sm), (max-width: $md) {
+//   //         margin-top: 5rem;
+//   //         gap: 2rem;
+//   //         justify-content: center;
+//   //     }
+//   //     margin-top: 4rem;
+//   //     display: flex;
+//   //     flex-wrap: wrap;
+//   //     justify-content: space-between;
+//   //     font-family: "Rubik", sans-serif;
+
+//   //     .experience {
+//   //         display: flex;
+//   //         align-items: center;
+//   //         gap: 1rem;
+//   //         >:nth-child(2) {
+//   //             line-height: 25px;
+//   //         }
+//   //     }
+
+//   //     .certificate {
+//   //         display: flex;
+//   //         flex-direction: column;
+//   //         align-items: center;
+//   //         text-transform: uppercase;
+
+//   //         img {
+//   //             margin-bottom: 1rem;
+//   //             width: 3.5rem;
+//   //         }
+//   //     }
+//   // }
+
+//   //   .person_img {
+//   //     @media (max-width: $sm), (max-width:$lg) {
+//   //       position: relative;
+//   //       left: 0;
+//   //       background-size: 20rem;
+//   //       display: flex;
+//   //       align-items: center;
+//   //       justify-content: center;
+//   //       background-position: bottom;
+//   //       width: 75%;
+//   //     }
+//   //     position: absolute;
+//   //     bottom: -2rem;
+//   //     margin: auto;
+//   //     background-image: url("../../../public/splash.png");
+//   //     background-repeat: no-repeat;
+//   //     background-size: cover;
+//   //     left: 33%;
+//   //     img {
+//   //       @media (max-width: $sm) {
+//   //         width: 100%;
+//   //       }
+//   //       max-width: 100%;
+//   //       height: auto;
+//   //       margin-bottom: -5px;
+//   //     }
+//   //   }
+
+//   //   .email {
+//   //     @media (max-width: $sm) {
+//   //       position: relative;
+//   //       display: none;
+//   //     }
+//   //     @media (max-width: $md){
+//   //       top:80%;
+//   //       right: 0;
+//   //       left: 0;
+//   //       text-align: center;
+//   //       margin-bottom: 1rem;
+//   //       // position:relative;
+//   //       display: none;
+//   //     }
+//   //     font-family: "Poppins",sans-serif;
+//   //     text-decoration: none;
+
+//   //     font-size: 1.3rem;
+//   //     position: absolute;
+//   //     top: 50%;
+//   //     left: 0;
+//   //     color: rgb(255,150,0);
+//   //   }
+//   // }
+
+//   .primaryText {
+//     margin-right: 1rem;
+//     @media (max-width: $sm) {
+//       margin-right: 0;
+//     }
+//   }
+
+//   .secondaryText {
+//     margin-left: 1rem;
+//     @media (max-width: $sm) {
+//       margin-left: 0;
+//     }
+//   }
+// // }

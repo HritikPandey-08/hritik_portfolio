@@ -1,24 +1,26 @@
 import React from "react";
 import css from "./ProjectExp.module.scss";
-import { workExp } from "../../utils/data";
+import { projects } from "../../utils/data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function ProjectExp() {
     return (
         <div id="project" className={`paddings bg_primary ${css.wrapper}`}>
-            {/* <a className="anchor" href="#work" id="work"></a> */}
             <div className={`innerWidth d-flex ${css.container}`}>
-                <span className="primaryText yPaddings text-center heading">My Work Experience</span>
+                <span className="primaryText yPaddings text-center heading">My Personal Projects</span>
                 <div className={`d-flex  ${css.projects}`}>
-                    {workExp.map((exp, i) => {
+                    {projects.map((exp, i) => {
                         return (
                             <div key={i} className={`d-flex ${css.proj}`}>
                                 <div className={css.post}>
-                                    <h1 className="pr-1">{exp.place}</h1>
-                                    <p>{exp.tenure}</p>
+                                    <h1 className="pr-1">{exp.title}</h1>
+                                    <p>{exp.month}</p>
                                 </div>
                                 <div className={css.role}>
-                                    <h1>{exp.role}</h1>
-                                    <p>{exp.detail}</p>
+                                    <h2>{exp.technology}</h2>
+                                    <p>{exp.shortDesc}</p>
+                                    <p><a href="github" target="_blank" rel="noreferrer">View Project <FontAwesomeIcon icon={faArrowRight} /></a></p>
                                 </div>
                             </div>
                         );

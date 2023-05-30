@@ -1,10 +1,11 @@
 @import './content.scss';
 
+$text-rubik : "Rubik",sans-serif;
 .bg_primary {
   background: #F8F7F1;
 }
 .heading{
-  font-family: "Rubik",sans-serif;
+  font-family: $text-rubik;
   text-transform: capitalize;
 }
 .innerWidth {
@@ -18,7 +19,7 @@
 
 .paddings {
   @media (min-width: $sm) {
-    padding: 4rem;
+    padding: 2.5rem;
   }
 
 
@@ -50,8 +51,8 @@
 
 .yPaddings {
   @media (min-width: $sm) {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   @media (min-width: $xl) {
@@ -59,8 +60,8 @@
     padding-bottom: 2rem;
   }
 
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .topPaddings {
@@ -118,9 +119,9 @@
 .secondaryText {
   @media (max-width: $sm) {
     font-size: 1.1rem;
-    line-height: 40px;
+    line-height: 30px;
   }
-  line-height: 50px;
+  line-height: 40px;
   font-size: 1.3rem;
   font-weight: 500;
   color : #0d2f3f;

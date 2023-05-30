@@ -7,8 +7,8 @@ import ProjectExp from "./components/ProjectExp/ProjectExp";
 import Footer from "./components/Footer/Footer";
 import Languages from "./components/Languages/Language";
 import ContactMe from "./components/ContactMe/ContactMe";
-
-// import Sidebar from "./components/Sidebar/Sidebar";
+// import ResumeContent from "./components/Sidebar/ResumeContent";
+// import CollapsibleContent from "./components/Sidebar/collapsible";
 
 function App() {
   return (
@@ -16,7 +16,9 @@ function App() {
       <Navbar />
       <HeroSection />
       <PortfolioSection />
-      {/* <Sidebar/> */}
+      {/* <ResumeContent/> */}
+      {/* <ResumeDetails/> */}
+      {/* <CollapsibleContent/> */}
       <ProjectExp />
       <Languages />
       <ContactMe />

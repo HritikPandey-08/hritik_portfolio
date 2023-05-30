@@ -68,7 +68,7 @@ export default function Navbar() {
                   duration={500}
                   offset={-95}
                 >
-                  Portfolio
+                  About Me
                 </Link>
               </li>
               <li>
@@ -98,7 +98,7 @@ export default function Navbar() {
                   duration={500}
                   offset={-100}
                 >
-                  contactme
+                  Contact Me
                 </Link>
               </li>
             </ul>

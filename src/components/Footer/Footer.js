@@ -24,7 +24,7 @@ export default function Footer() {
             <p>Mumbai, Maharashtra, India</p>
           </div>
 
-          <ul className={css.menu}>
+          <ul className={`${css.menu} p-0`}>
             <li>
               <Link to="home" smooth={true} duration={500} offset={-100}>
                 Home
@@ -37,7 +37,7 @@ export default function Footer() {
                 duration={500}
                 offset={-95}
               >
-                Portfolio
+                About Me
               </Link>
             </li>
             <li>
@@ -67,7 +67,7 @@ export default function Footer() {
                 duration={500}
                 offset={-100}
               >
-                contactme
+                contact me
               </Link>
             </li>
           </ul>

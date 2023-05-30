@@ -1,25 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import css from "./ContactMe.module.scss";
 import { Element } from "react-scroll";
 const ContactMe = () => {
-  // Define state variables for form inputs
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Perform any necessary actions, such as sending the data to a server
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Message:", message);
-    // Reset form inputs
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
-
   return (
     <>
       <Element name="contactme">
@@ -51,7 +33,7 @@ const ContactMe = () => {
                   </div>
                 </div>
                 <div className={css.links}>
-                  <a
+                  {/* <a
                     href="https://www.facebook.com"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -64,7 +46,7 @@ const ContactMe = () => {
                     rel="noopener noreferrer"
                   >
                   <img src="./instagram.png" alt="instagram" />
-                  </a>
+                  </a> */}
                   <a
                     href="https://github.com/HritikPandey-08"
                     target="_blank"
@@ -73,7 +55,7 @@ const ContactMe = () => {
                   <img src="./github.png" alt="github" />
                   </a>
                   <a
-                    href="https://www.linkedin.com"
+                    href="https://www.linkedin.com/in/hritik-pandey-0a8838232/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -82,7 +64,7 @@ const ContactMe = () => {
                 </div>
               </div>
               <div className={css.rightSide}>
-                <form onSubmit={handleSubmit}>
+                <form>
                   <div className={css.form_group}>
                     <h5>Name</h5>
                     <input
@@ -90,20 +72,6 @@ const ContactMe = () => {
                       id="name"
                       className="form-control w-100"
                       placeholder="Name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      required
-                    />
-                  </div>
-                  <div className={css.form_group}>
-                    <h5>Email</h5>
-                    <input
-                      type="email"
-                      id="email"
-                      className="form-control w-100"
-                      placeholder="Email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
                       required
                     />
                   </div>
@@ -111,17 +79,14 @@ const ContactMe = () => {
                     <h5>Message</h5>
                     <textarea
                       id="message"
-                      value={message}
                       className="px-2 py-1 w-100 form-control"
                       rows={"3"}
                       placeholder="Message"
-                      onChange={(e) => setMessage(e.target.value)}
                       required
                     />
                   </div>
-                  <button type="submit" className="btn w-100">
-                    Send Message
-                  </button>
+                  <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=pandeyhritik08@gmail.com&body=Hi Hritik,%0A%0A%0ARegards,%0A`} className="btn w-100" target="_blank" rel="noreferrer">Send Email
+                  </a>
                 </form>
               </div>
             </div>

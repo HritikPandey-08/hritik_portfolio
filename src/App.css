@@ -7,6 +7,17 @@
   pointer-events: none;
 }
 
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  font-size: 4rem;
+}
+
+.collapsible-content.collapsed {
+  max-height: 200px; /* Adjust this value as needed */
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

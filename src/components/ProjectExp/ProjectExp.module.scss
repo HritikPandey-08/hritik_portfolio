@@ -14,10 +14,7 @@
             flex-direction: column;
             gap: 1.4rem;
             position: relative;
-            font-family: "Poppins", sans-serif;
-            
-           
-
+            font-family: "Poppins", sans-serif;     
             .proj {
                 width: 100%;
                 justify-content: space-between;
@@ -31,12 +28,44 @@
 
                     h1{
                         font-weight: 600;
+                        font-size: 2rem;
+                        margin: auto;
+                        color: #0d2f3f;  
+                        @media (max-width:$sm){
+                          font-size:1.4rem;
+            
+                        }
+                        
                     }
-                   
+                    p
+                    {
+                        font-family: "Raleway",sans-serif;
+                        font-size: 1.4rem;
+                        a{
+                            text-decoration: none;
+                            padding: 0;
+                            margin: 0;
+                            color: rgb(255, 162, 1);
+                            font-weight: 600;
+                        }
+                        @media (max-width:$sm){
+                            font-size: 1rem;
+            
+                        }
+                        
+                    }
+                    @media (max-width:$sm){
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+        
+                    }
+                    
                 }
 
                 .role {
-                    margin-left: 2rem;
+                    margin-left: 2.1rem;
                 }
             }
 
@@ -47,7 +76,8 @@
                 flex-direction: column;
                 gap: 1.4rem;
                 left: 45%;
-
+                
+                
                 .line {
                     position: absolute;
                     height: 92%;
@@ -56,9 +86,12 @@
                     background-position: right;
                     background-size: 2px 30px;
                     background-repeat: repeat-y;
-                    left: 48%;
+                    left: 50%;
                     z-index: 1;
                     border-radius: 5px;
+                    @media (max-width:$sm){
+                        overflow: hidden;
+                    }
                 }
 
                 >div {
