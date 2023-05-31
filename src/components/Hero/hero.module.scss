@@ -32,6 +32,9 @@
         font-size: 1.3rem;
         color: rgb(255, 150, 0);
         justify-content: center;
+        @media (max-width: $sm){
+          display: none;
+        }
       }
     }
     .person_img {
