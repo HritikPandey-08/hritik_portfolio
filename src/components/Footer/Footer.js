@@ -14,7 +14,7 @@ export default function Footer() {
             amazing together.
           </span>
           <span className="primaryText">
-            Start by <a href="mailto:pandeyhritik08@gmail.com">saying hi</a>
+            Start by <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=pandeyhritik08@gmail.com&body=Hi Hritik,%0A%0A%0ARegards,%0A`}>saying hi</a>
           </span>
         </div>
 
