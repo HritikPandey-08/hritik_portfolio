@@ -1,8 +1,9 @@
 import React from "react";
 import css from "./Language.module.scss";
+import { imagePath } from "../../utils/paths";
 const ProgrammingLanguageIcon = ({ language }) => {
   // Assuming all icon images are located in the "/icons" folder
-  const iconPath = `./${language.toLowerCase()}.png`;
+  const iconPath = imagePath + `${language.toLowerCase()}.png`;
 
   return <img src={iconPath} alt={language} />;
 };

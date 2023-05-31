@@ -1,6 +1,7 @@
 import React from "react";
 import css from "./ContactMe.module.scss";
 import { Element } from "react-scroll";
+import { imagePath } from "../../utils/paths";
 const ContactMe = () => {
   return (
     <>
@@ -20,7 +21,7 @@ const ContactMe = () => {
                 </div>
                 <div className={`${css.contact} d-flex flex-column`}>
                   <div className={css.contact_detail}>
-                    <img src="./mail.png" alt="mail" />
+                    <img src={imagePath + "mail.png"} alt="mail" />
                     <span><a href="mailto:pandeyhritik08@gmail.com">pandeyhritik08@gmail.com</a></span>
                   </div>
                   {/* <div className={css.contact_detail}>
@@ -28,7 +29,7 @@ const ContactMe = () => {
                     <span> +23456 7762</span>
                   </div> */}
                   <div className={css.contact_detail}>
-                    <img src="./address.png" alt="address" />
+                    <img src={imagePath + "address.png"} alt="address" />
                     <span>Mumbai, Maharashtra</span>
                   </div>
                 </div>
@@ -52,14 +53,14 @@ const ContactMe = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                  <img src="./github.png" alt="github" />
+                  <img src={imagePath + "github.png"} alt="github" />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/hritik-pandey-0a8838232/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                  <img src="./linkedin.png" alt="linkedin" />
+                  <img src={imagePath + "linkedin.png"} alt="linkedin" />
                   </a>
                 </div>
               </div>

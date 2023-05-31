@@ -1,26 +1,27 @@
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { CiMobile1 } from "react-icons/ci";
 import { MdWorkspacesOutline } from "react-icons/md";
+import { imagePath } from "./paths";
 export const projectExperience = [
   {
     name: "Website Design",
     projects: 10,
     icon: HiOutlineDesktopComputer,
-    path: "./website_design.png",
+    path: imagePath + "website_design.png",
     bg: "#286F6C",
   },
   {
     name: "machine Learning Project",
     projects: 1,
     icon: CiMobile1,
-    path: "./ml.png",
+    path: imagePath + "ml.png",
     bg: "#EEC048",
   },
   {
     name: "Mini Projects",
     projects: 12,
     icon: MdWorkspacesOutline,
-    path: "./mini_projects.png",
+    path: imagePath + "mini_projects.png",
     bg: "#F26440",
   },
 ];

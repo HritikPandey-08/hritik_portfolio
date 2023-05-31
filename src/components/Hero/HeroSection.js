@@ -28,7 +28,7 @@ export default function HeroSection() {
         {/* Person image */}
 
         <div className={css.person_img}>
-          <img src="./new_avtar.png"  alt="" />
+          <img src={process.env.PUBLIC_URL + '/images/new_avtar.png'}  alt="" />
         </div>
       </div>
     </div>
