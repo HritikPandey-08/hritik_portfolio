@@ -16,7 +16,7 @@ export default function HeroSection() {
             {" "}
             I design beautiful simple things,
             <br />
-             And I love what i do{" "}
+             And I love what I do{" "}
           </span>
         {/* Email */}
 
