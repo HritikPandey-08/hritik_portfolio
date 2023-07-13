@@ -45,6 +45,12 @@ export default function ProjectExp() {
                                 style={{ background: "#EEC048" }}
                             ></div>
                         </div>
+                        <div>
+                            <div
+                                className={css.circle}
+                                style={{ background: "#a6ce00" }}
+                            ></div>
+                        </div>
                     </div>
                 </div>
             </div>

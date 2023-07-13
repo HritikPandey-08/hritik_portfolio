@@ -81,6 +81,18 @@ export const  education = [
 
 export const projects = [
   {
+    title: "Climato",
+    year:2023,
+    month: "May 2023",
+    technology: "React Js, OpenWeatherAPI",
+    description:
+      "Sign language recognition involves recognizing actions from sign languages.The ML algorithm is trained to recognize specific signs and gestures.The algorithm captures the live video of the user, identifying the signs being made and translating them into text.significantly improve communication between sign language users and non-sign language users,providing equal access to services and information for deaf or hard-of-hearing individuals.",
+      shortDesc:
+      "The React.js OpenWeatherAPI Integration project is a dynamic web application built using React.js and powered by the OpenWeatherAPI. With a focus on providing real-time weather information, this project offers a seamless user experience and a visually appealing interface.",
+      github:
+      ""
+  },
+  {
     title: "Sign Language Recognition",
     year:2023,
     month: "Feb 2023 - Mar 2023",

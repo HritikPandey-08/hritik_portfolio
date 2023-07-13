@@ -27,6 +27,7 @@ export default function Languages() {
           <ProgrammingLanguageIcon language="scss" />
           <ProgrammingLanguageIcon language="mysqldb" />
           <ProgrammingLanguageIcon language="python" />
+          <ProgrammingLanguageIcon language="java" />
           <ProgrammingLanguageIcon language="django" />
           <ProgrammingLanguageIcon language="mongodb" />
           <ProgrammingLanguageIcon language="php" />
