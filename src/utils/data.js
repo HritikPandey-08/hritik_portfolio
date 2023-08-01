@@ -81,16 +81,28 @@ export const  education = [
 
 export const projects = [
   {
+    title: "myNotes",
+    year:2023,
+    month: "July 2023",
+    technology: "MERN Stack",
+    description:
+      "Our Notes App is designed with a sleek and intuitive interface, making note-taking a breeze for users of all levels. Users can categorize their notes, set reminders, and easily search through their collections, enabling them to stay organized and focused on their tasks. With the robust MERN stack technology at its core, the app ensures reliable data storage and quick response times, even during peak usage. Whether on the go or at home, users can rely on our Notes App to keep their important information at their fingertips, streamlining their daily routines and boosting productivity.",
+      shortDesc:
+      "Our Notes App is a user-friendly application built with the MERN stack (MongoDB, Express, React, and Node.js). It allows secure note creation, reading, updating, and deletion. With user login and signup, notes can be managed from any device with seamless synchronization.",
+      github:
+      "https://github.com/HritikPandey-08/myNotes.git"
+  },
+  {
     title: "Climato",
     year:2023,
     month: "May 2023",
     technology: "React Js, OpenWeatherAPI",
     description:
-      "Sign language recognition involves recognizing actions from sign languages.The ML algorithm is trained to recognize specific signs and gestures.The algorithm captures the live video of the user, identifying the signs being made and translating them into text.significantly improve communication between sign language users and non-sign language users,providing equal access to services and information for deaf or hard-of-hearing individuals.",
+      "",
       shortDesc:
       "The React.js OpenWeatherAPI Integration project is a dynamic web application built using React.js and powered by the OpenWeatherAPI. With a focus on providing real-time weather information, this project offers a seamless user experience and a visually appealing interface.",
       github:
-      ""
+      "https://github.com/HritikPandey-08/climato.git"
   },
   {
     title: "Sign Language Recognition",
@@ -102,7 +114,7 @@ export const projects = [
       shortDesc:
       "Developed an ML algorithm that translates sign language gestures into text, enhancing communication between sign language users and non-sign language users for equal accessibility.",
       github:
-      ""
+      "https://github.com/HritikPandey-08/sign_recognition.git"
   },
   {
     title: "Ecommerce Website",
@@ -115,7 +127,7 @@ export const projects = [
       shortDesc:
       "Built a fully functional ecommerce website that provides a great user experience to customers. Integrated Instamojo API for secure payment processing, allowing users to browse and purchase products with ease.",
       github:
-      ""
+      "https://github.com/HritikPandey-08/ecommerce_website.git"
   },
   {
     title: "HealthCare Website",
@@ -128,6 +140,6 @@ export const projects = [
       shortDesc:
       "Created a comprehensive healthcare website with online appointment and consultation functionalities. Users can schedule appointments and consult with doctors virtually.",
       github:
-      ""
+      "https://github.com/HritikPandey-08/Updated_e_healthcare.git"
   },
 ];
