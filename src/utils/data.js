@@ -96,7 +96,7 @@ export const projects = [
     title: "Climato",
     year:2023,
     month: "May 2023",
-    technology: "React Js, OpenWeatherAPI",
+    technology: "React Js, Open Weather API",
     description:
       "",
       shortDesc:

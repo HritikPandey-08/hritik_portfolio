@@ -1,113 +1,90 @@
-@import '../../styles/content.scss';
+@import "../../styles/content.scss";
 
 .wrapper {
-
-    .container {
-        flex-direction: column;
-        gap: 2rem;
-        span{
-            font-family: "Rubik",sans-serif;
-        }
-
-        .projects {
-            width: 100%;
-            flex-direction: column;
-            gap: 1.4rem;
-            position: relative;
-            font-family: "Poppins", sans-serif;     
-            .proj {
-                width: 100%;
-                justify-content: space-between;
-                line-height: 40px;
-                align-items: flex-start;
-                
-
-                >div {
-                    flex: 1;
-                    padding : 5px 10px;
-
-                    h1{
-                        font-weight: 600;
-                        font-size: 2rem;
-                        margin: auto;
-                        color: #0d2f3f;  
-                        @media (max-width:$sm){
-                          font-size:1.4rem;
-            
-                        }
-                        
-                    }
-                    p
-                    {
-                        font-family: "Raleway",sans-serif;
-                        font-size: 1.4rem;
-                        a{
-                            text-decoration: none;
-                            padding: 0;
-                            margin: 0;
-                            color: rgb(255, 162, 1);
-                            font-weight: 600;
-                        }
-                        @media (max-width:$sm){
-                            font-size: 1rem;
-            
-                        }
-                        
-                    }
-                    @media (max-width:$sm){
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        overflow: hidden;
-        
-                    }
-                    
-                }
-
-                .role {
-                    margin-left: 2.1rem;
-                }
-            }
-
-            .progressbar {
-                position: absolute;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                gap: 1.4rem;
-                left: 45%;
-                
-                
-                .line {
-                    position: absolute;
-                    height: 92%;
-                    width: 2px;
-                    background-image: linear-gradient(black 33%, rgba(255, 255, 255, 0) 0%);
-                    background-position: right;
-                    background-size: 2px 30px;
-                    background-repeat: repeat-y;
-                    left: 50%;
-                    z-index: 1;
-                    border-radius: 5px;
-                    @media (max-width:$sm){
-                        overflow: hidden;
-                    }
-                }
-
-                >div {
-                    flex: 1;
-                    padding-top: .8rem;
-                    z-index: 2;
-
-                    .circle {
-                        border-radius: 50%;
-                        background: black;
-                        width: 1.2rem;
-                        height: 1.2rem;
-                    }
-                }
-            }
-        }
-
+  .container {
+    position: relative;
+    overflow: hidden;
+    span {
+      font-family: "Rubik", sans-serif;
     }
+    .projects {
+      font-family: "Poppins", sans-serif;
+      .proj {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        overflow: hidden;
+        > div {
+          flex: 1;
+          line-height: 40px;
+          h1 {
+            font-weight: 600;
+            font-size: 2rem;
+            margin: auto;
+            color: #0d2f3f;
+            @media (max-width: $sm) {
+              font-size: 1.4rem;
+            }
+          }
+          p {
+            font-family: "Raleway", sans-serif;
+            font-size: 1.4rem;
+            a {
+              text-decoration: none;
+              padding: 0;
+              margin: 0;
+              color: rgb(255, 162, 1);
+              font-weight: 600;
+            }
+            @media (max-width: $sm) {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        .role {
+          margin-left: 2.1rem;
+        }
+        .progressbar {
+          position: absolute;
+          left: 45%;
+          display: flex;
+          flex-direction: row;
+        height: 100%;
+          .line {
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            background-image: linear-gradient(
+              black 33%,
+              rgba(255, 255, 255, 0) 0%
+            );
+            background-position: right;
+            background-size: 2px 30px;
+            background-repeat: repeat-y;
+            left: 50%;
+            z-index: 1;
+            overflow: hidden;
+            &.match-height {
+                height: 100%;
+              }
+            @media (max-width: $sm) {
+              overflow: hidden;
+            }
+          }
+
+          > div {
+            flex: 1;
+            z-index: 2;
+
+            .circle {
+              border-radius: 50%;
+              width: 1.2rem;
+              height: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
