@@ -33,21 +33,23 @@ export default function Languages() {
           <ProgrammingLanguageIcon language="php" />
           <ProgrammingLanguageIcon language="googlecloud" />
           <ProgrammingLanguageIcon language="react" />
+          <ProgrammingLanguageIcon language="nodejs" />
+          <ProgrammingLanguageIcon language="express" />
+          <ProgrammingLanguageIcon language="postgresql" />
           <ProgrammingLanguageIcon language="git" />
           <ProgrammingLanguageIcon language="github" />
           <ProgrammingLanguageIcon language="vsstudio" />
+          <ProgrammingLanguageIcon language="postman" />
+          <ProgrammingLanguageIcon language="thunderclient" />
+          <ProgrammingLanguageIcon language="digitalocean" />
+          <ProgrammingLanguageIcon language="linux" />
         </div>
-        <div className="heading text-center">
+        {/* <div className="heading text-center">
           {" "}
           <span className="primaryText ">Familier with</span>
         </div>
         <div className={`text-center ${css.languages}`}>
-          
-          <ProgrammingLanguageIcon language="postgresql" />
-          <ProgrammingLanguageIcon language="nodejs" />
-          <ProgrammingLanguageIcon language="vitejs" />
-          <ProgrammingLanguageIcon language="digitalocean" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
