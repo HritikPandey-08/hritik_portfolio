@@ -30,7 +30,8 @@
       .email {
         text-decoration: none;
         font-size: 1.3rem;
-        color: rgb(255, 150, 0);
+        font-family:  "Rubik",sans-serif;
+        color: $hyperlink-gold;
         justify-content: center;
         @media (max-width: $sm){
           display: none;

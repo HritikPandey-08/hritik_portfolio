@@ -35,26 +35,19 @@ export const AboutMe = [
 ]
 export const workExp = [
   {
-    place: "Self-Employed, Brisbane",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Visual Designer",
+    place: "SkillVertex",
+    tenure: "Feb 2023 - May 2023",
+    role: "Python Developer",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "I gained practical experience in Python programming during my internship, where I applied my skills for text analysis, including tokenization, stemming, stop word removal, and word counting. Additionally, I developed a Tic Tac Toe game using the Django framework and worked on both static and dynamic websites, expanding my knowledge of web development.",
   },
   {
-    place: "New Man Services",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "UI/UX Designer",
+    place: "Quantiphi",
+    tenure: "May 2021 - Sep 2021",
+    role: "Data Intern Tagger",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
-  },
-  {
-    place: "Global Solution",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Sr. Product Designer",
-    detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
-  },
+      "I effectively utilized labeling and OBS UI visualization tools to tag over 10,000 images for machine learning projects, resulting in a significant 25% improvement in model accuracy. Additionally, I implemented rigorous quality control measures, achieving a remarkable 99% acceptance rate from clients and ensuring 100% accurate data tagging for American insurance clients, contributing to a high level of customer satisfaction.",
+  }
 ];
 export const  education = [
   {
@@ -80,6 +73,51 @@ export const  education = [
 ];
 
 export const projects = [
+  {
+    title: "Ecommerce Backend API",
+    year:2023,
+    month: "September 2023",
+    technology: "Node.js, Express.js, and MongoDB",
+    description:
+      ` Our E-Commerce Website Backend, powered by Node.js, Express.js, and MongoDB, offers a cutting-edge foundation for your online store. Key features include user authentication, robust validation, streamlined checkout, order and inventory management, secure payment integration, product catalog organization, and more. With scalability, security, and seamless API integration, our backend empowers your e-commerce business while we handle the technical complexities, ensuring a top-notch shopping experience for your customers. Upgrade your online store or launch a new one with our feature-rich, high-performance solution.
+      `,
+      shortDesc:
+      "Our E-Commerce Website Backend, powered by Node.js, Express.js, and MongoDB, delivers a robust foundation for your online store. With comprehensive features including user authentication, validation, seamless checkout, order management, and more, our backend solution ensures a secure, efficient, and scalable platform to drive your e-commerce business.",
+      github:
+      "https://github.com/HritikPandey-08/myNotes.git"
+  },
+  {
+    title: "Audio Features Extraction",
+    year:2023,
+    month: "August 2023",
+    technology: "Python Django And PostgreSQL",
+    description:
+      `Our project creates a user-friendly web interface for our audio file detection API. The interface allows the only user to easily upload single or multiple audio files with various extensions. Uploaded files are securely stored in a PostgreSQL database, along with key metadata like upload date, file size, and extension. Users can view their uploads in a clear tabular format and play them directly from the dashboard, enhancing their experience.
+
+      We've also implemented a warning system to ensure responsible usage and system performance. If the total duration of uploaded audio files exceeds 10 minutes, a warning prompts the user to manage their content. This design emphasizes simplicity and user-friendliness, avoiding complex authentication mechanisms and focusing on providing a seamless experience for efficient audio file management.`,
+      shortDesc:
+      "Create a user-friendly web interface for our audio file detection API project. Users can upload multiple audio files, view their uploads in a tabular format, play the files, and receive a warning if their total duration exceeds 10 minutes. The backend uses PostgreSQL to store file metadata.",
+      github:
+      "https://github.com/HritikPandey-08/myNotes.git"
+  },
+  {
+    title: "Spam Caller REST API ",
+    year:2023,
+    month: "August 2023",
+    technology: "Python Django And PostgreSQL",
+    description:
+      `Our project involves developing a production-ready REST API for a mobile app similar to caller ID and contact management apps. Built on the dependable Django framework and utilizing PostgreSQL as the relational database, our API offers essential functionalities.
+
+      Users can register with their name, phone number, and optional email, ensuring uniqueness of phone numbers. It automates importing phone contacts and allows users to manage them. Spam reporting contributes to a global database for spam number identification.
+      
+      Search functionality enables users to find individuals by name or phone number, with results prioritizing exact name matches. User privacy is upheld, with detailed profiles shown only for registered users in each other's contact lists.
+      
+      Our secure and efficient API, designed for production use, supports contact management, spam reporting, and user-friendly search capabilities, facilitating seamless integration with the mobile app's front-end.`,
+      shortDesc:
+      "Create a robust REST API for a mobile app that enables users to identify spam numbers and search for individuals by name or phone number. Built using Django and backed by a PostgreSQL database, this API supports user registration, contact management, and spam reporting, providing essential functionality for the mobile app's front-end.",
+      github:
+      "https://github.com/HritikPandey-08/myNotes.git"
+  },
   {
     title: "myNotes",
     year:2023,

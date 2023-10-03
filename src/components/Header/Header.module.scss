@@ -47,11 +47,11 @@
             color: #0d2f3f;
 
             &:active {
-              color: rgb(255, 162, 0);
+              color: $hyperlink-gold;
             }
 
             &:hover {
-              color: rgb(255, 162, 0);
+              color: $hyperlink-gold;
             }
           }
         }

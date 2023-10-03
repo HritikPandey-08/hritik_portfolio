@@ -44,12 +44,14 @@ export default function Languages() {
           <ProgrammingLanguageIcon language="digitalocean" />
           <ProgrammingLanguageIcon language="linux" />
         </div>
-        {/* <div className="heading text-center">
+        <div className="heading text-center">
           {" "}
           <span className="primaryText ">Familier with</span>
         </div>
         <div className={`text-center ${css.languages}`}>
-        </div> */}
+        <ProgrammingLanguageIcon language="docker" />
+        <ProgrammingLanguageIcon language="elasticsearch" />
+        </div>
       </div>
     </div>
   );
