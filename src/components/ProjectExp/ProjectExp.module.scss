@@ -1,94 +1,109 @@
 @import "../../styles/content.scss";
 
 .wrapper {
-  .container {
-    position: relative;
-    overflow: hidden;
+	.container {
+		position: relative;
+		overflow: hidden;
 
-    .projects {
-      font-family: "Poppins", sans-serif;
-      .proj {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        overflow: hidden;
-        > div {
-          flex: 1;
-          line-height: 40px;
-          h1 {
-            font-weight: 600;
-            font-size: 2rem;
-            margin: auto;
-            color: #0d2f3f;
-            @media (max-width: $sm) {
-              font-size: 1.4rem;
-            }
-          }
-          p {
-            font-family: "Raleway", sans-serif;
-            font-size: 1.4rem;
-            a {
-              text-decoration: none;
-              padding: 0;
-              margin: 0;
-              color: $hyperlink-gold;
-              font-weight: 600;
-            }
-            @media (max-width: $sm) {
-              font-size: 1rem;
-            }
-          }
-        }
+		.projects {
+			font-family: "Poppins", sans-serif;
 
-        .role {
-          margin-left: 2.1rem;
-        }
-        .progressbar {
-          position: absolute;
-          left: 45%;
-          display: flex;
-          flex-direction: row;
-          height: 100%;
-          .line {
-            position: absolute;
-            height: 100%;
-            width: 2px;
-            background-image: linear-gradient(
-              black 33%,
-              rgba(255, 255, 255, 0) 0%
-            );
-            background-position: right;
-            background-size: 2px 30px;
-            background-repeat: repeat-y;
-            left: 50%;
-            z-index: 1;
-            overflow: hidden;
-            &.match-height {
-              height: 100%;
-            }
-            @media (max-width: $sm) {
-              overflow: hidden;
-            }
-          }
+			.proj {
+				display: flex;
+				flex-direction: row;
+				position: relative;
+				overflow: hidden;
 
-          > div {
-            flex: 1;
-            z-index: 2;
-            padding-top: 0.5rem;
-            .circle {
-              border-radius: 50%;
-              width: 1.2rem;
-              height: 1.2rem;
-            }
-          }
-        }
-      }
-    }
-    span {
-      font-family: "Rubik", sans-serif;
-    }
-    span:hover {
-		 color: $hyperlink-gold;
-    }
-  }
+				>div {
+					flex: 1;
+					line-height: 40px;
+
+					h1 {
+						font-weight: 600;
+						font-size: 2rem;
+						margin: auto;
+						color: #0d2f3f;
+
+						@media (max-width: $sm) {
+							font-size: 1.4rem;
+						}
+					}
+
+					p {
+						font-family: "Raleway", sans-serif;
+						font-size: 1.4rem;
+
+						a {
+							text-decoration: none;
+							padding: 0;
+							margin: 0;
+							color: $hyperlink-gold;
+							font-weight: 600;
+						}
+
+						@media (max-width: $sm) {
+							font-size: 1rem;
+						}
+					}
+				}
+
+				.role {
+					margin-left: 2.1rem;
+				}
+
+				.progressbar {
+					position: absolute;
+					left: 45%;
+					display: flex;
+					flex-direction: row;
+					height: 100%;
+
+					.line {
+						position: absolute;
+						height: 100%;
+						width: 2px;
+						background-image: linear-gradient(black 33%,
+								rgba(255, 255, 255, 0) 0%);
+						background-position: right;
+						background-size: 2px 30px;
+						background-repeat: repeat-y;
+						left: 50%;
+						z-index: 1;
+						overflow: hidden;
+
+						&.match-height {
+							height: 100%;
+						}
+
+						@media (max-width: $sm) {
+							overflow: hidden;
+						}
+					}
+
+					>div {
+						flex: 1;
+						z-index: 2;
+						padding-top: 0.5rem;
+
+						.circle {
+							border-radius: 50%;
+							width: 1.2rem;
+							height: 1.2rem;
+						}
+					}
+				}
+			}
+		}
+
+		.moreButton {
+			span {
+				cursor: pointer;
+				font-family: 'Rubik',sans-serif;
+
+				&:hover {
+					color: $hyperlink-gold !important;
+				}
+			}
+		}
+	}
 }
