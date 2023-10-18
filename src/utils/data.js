@@ -84,7 +84,7 @@ export const projects = [
       shortDesc:
       "Our E-Commerce Website Backend, powered by Node.js, Express.js, and MongoDB, delivers a robust foundation for your online store. With comprehensive features including user authentication, validation, seamless checkout, order management, and more, our backend solution ensures a secure, efficient, and scalable platform to drive your e-commerce business.",
       github:
-      "https://github.com/HritikPandey-08/myNotes.git"
+      "https://github.com/HritikPandey-08/eCommerce_backend_RESTAPI.git"
   },
   {
     title: "Audio Features Extraction",
@@ -98,7 +98,7 @@ export const projects = [
       shortDesc:
       "Create a user-friendly web interface for our audio file detection API project. Users can upload multiple audio files, view their uploads in a tabular format, play the files, and receive a warning if their total duration exceeds 10 minutes. The backend uses PostgreSQL to store file metadata.",
       github:
-      "https://github.com/HritikPandey-08/myNotes.git"
+      "https://github.com/HritikPandey-08/AudioFeatureExtraction.git"
   },
   {
     title: "Spam Caller REST API ",
@@ -116,7 +116,7 @@ export const projects = [
       shortDesc:
       "Create a robust REST API for a mobile app that enables users to identify spam numbers and search for individuals by name or phone number. Built using Django and backed by a PostgreSQL database, this API supports user registration, contact management, and spam reporting, providing essential functionality for the mobile app's front-end.",
       github:
-      "https://github.com/HritikPandey-08/myNotes.git"
+      "https://github.com/HritikPandey-08/SpamCall_Checker.git"
   },
   {
     title: "myNotes",
